@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zx-config-client
+  cloud:
+    config:
+      name: bootstrap-zx-config-client
+      uri:  http://127.0.0.1:8001

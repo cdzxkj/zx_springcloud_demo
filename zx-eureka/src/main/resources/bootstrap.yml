@@ -1,0 +1,22 @@
+spring:
+  security:
+    user:
+      name: zxdemo
+      password: zxdemopwd
+  application:
+    name: zx-eureka
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://zxdemo:zxdemopwd@127.0.0.1:8002/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  server:
+    enable-self-preservation: false
+
