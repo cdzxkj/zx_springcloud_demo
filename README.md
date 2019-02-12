@@ -1,8 +1,12 @@
 # zx_springcloud_demo
 
 #### 项目介绍
-基于springcloud的demo,基于springboot版本2.0.4.RELEASE的springcloud版本:Finchley.SR1
-springboot官方:https://spring.io/projects/spring-boot
+springcloud的学习demo      
+  
+springboot版本2.0.4.RELEASE  
+springboot官方:https://spring.io/projects/spring-boot  
+  
+springcloud版本:Finchley.SR1  
 springcloud官方:https://spring.io/projects/spring-cloud
 
 #### 软件架构
