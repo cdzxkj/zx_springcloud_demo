@@ -13,8 +13,8 @@ springcloud官方:https://spring.io/projects/spring-cloud
 1. zx-config为配置中心
 2. zx-eureka为注册中心
 3. zx-config-client为读取配置中心的示例服务
-
-
+4. zx-feign-service为Feign的使用(服务提供方)
+5. zx-feign-client为Feign的使用(服务消费方)
 
 #### 使用说明
 1. 先启动配置中心(zx-config)
