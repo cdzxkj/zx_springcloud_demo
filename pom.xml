@@ -19,6 +19,8 @@
         <module>zx-eureka</module>
         <module>zx-config</module>
 		<module>zx-config-client</module>
+		<module>zx-feign-service</module>
+		<module>zx-feign-client</module>
     </modules>
 
     <properties>

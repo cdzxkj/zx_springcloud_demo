@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zx-feign-service
+  cloud:
+    config:
+      name: bootstrap-zx-feign-service
+      uri:  http://127.0.0.1:8001
