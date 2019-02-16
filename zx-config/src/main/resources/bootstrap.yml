@@ -7,4 +7,4 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/zx-config-client,classpath:/zx-feign-service,classpath:/zx-feign-client
+          search-locations: classpath:/zx-config-client,classpath:/zx-feign-service,classpath:/zx-feign-client,classpath:/zx-ribbon-service,classpath:/zx-ribbon-client

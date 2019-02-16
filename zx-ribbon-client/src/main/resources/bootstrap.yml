@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zx-ribbon-client
+  cloud:
+    config:
+      name: bootstrap-zx-ribbon-client
+      uri:  http://127.0.0.1:8001
