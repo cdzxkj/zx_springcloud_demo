@@ -1,7 +1,7 @@
 # zx_springcloud_demo
 
 #### 项目介绍
-springcloud的学习demo      
+springcloud的学习demo，项目脚手架      
   
 springboot版本2.0.4.RELEASE  
 springboot官方:https://spring.io/projects/spring-boot  
@@ -9,16 +9,14 @@ springboot官方:https://spring.io/projects/spring-boot
 springcloud版本:Finchley.SR1  
 springcloud官方:https://spring.io/projects/spring-cloud
 
-#### 软件架构
-1. zx-config为配置中心
-2. zx-eureka为注册中心
-3. zx-config-client为读取配置中心的示例服务
-4. zx-feign-service为Feign的使用(服务提供方)
-5. zx-feign-client为Feign的使用(服务消费方)
+#### 各个模块说明
+1. zx-config 为配置中心(本地方式)
+2. zx-config-client 为读取本地配置中心的示例
+3. zx-eureka 为注册中心
+4. zx-feign-service 为Feign的使用(服务提供方)
+5. zx-feign-client 为Feign的使用(服务消费方)
+6. zx-ribbon-service 为Ribbon的使用(服务提供方)
+7. zx-ribbon-client 为Ribbon的使用(服务消费方)
 
-#### 使用说明
-1. 先启动配置中心(zx-config)
-2. 启动注册中心(zx-eureka)
-3. 启动读取配置中心的示例服务(zx-config-client)
 
 

@@ -16,9 +16,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>zx-eureka</module>
         <module>zx-config</module>
 		<module>zx-config-client</module>
+        <module>zx-eureka</module>
 		<module>zx-feign-service</module>
 		<module>zx-feign-client</module>
 		<module>zx-ribbon-service</module>
@@ -54,8 +54,8 @@
         <amqp-client.version>4.0.0</amqp-client.version>
 
         <!-- target -->
-        <target.dir>F:\zx_springcloud_demo_jar</target.dir>
-        <target.applicaion.version>application.1.0</target.applicaion.version>
+        <target.dir>/Users/linian/jar/zx_springboot_jar</target.dir>
+        <target.applicaion.version>zx_springboot.1.0</target.applicaion.version>
 
         <druid.version>1.0.26</druid.version>
         <mybatis-baomidou.version>2.1.9</mybatis-baomidou.version>
