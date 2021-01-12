@@ -4,3 +4,13 @@ server:
 logging:
   config: classpath:logback.xml
 
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://zxdemo:zxdemopwd@127.0.0.1:8002/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+

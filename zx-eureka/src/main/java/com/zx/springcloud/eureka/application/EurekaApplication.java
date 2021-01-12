@@ -28,6 +28,5 @@ public class EurekaApplication {
             http.csrf().ignoringAntMatchers("/**").and().authorizeRequests().anyRequest()
                     .authenticated().and().httpBasic();
         }
-
     }
 }
