@@ -1,6 +1,6 @@
-package com.zx.springcloud.sleuth.demo.feign;
+package com.zx.springcloud.feignclient.demo.feign;
 
-import com.zx.springcloud.sleuth.demo.feign.impl.DemoFeignClientHystric;
+import com.zx.springcloud.feignclient.demo.feign.impl.DemoFeignClientHystric;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

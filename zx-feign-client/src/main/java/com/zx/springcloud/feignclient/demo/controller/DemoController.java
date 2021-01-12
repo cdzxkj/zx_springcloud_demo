@@ -1,10 +1,9 @@
-package com.zx.springcloud.sleuth.demo.controller;
+package com.zx.springcloud.feignclient.demo.controller;
 
-import com.zx.springcloud.sleuth.demo.feign.DemoFeignClient;
+import com.zx.springcloud.feignclient.demo.feign.DemoFeignClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  * @version 1.0
  * @date 2018-05-29
  */
-@Controller
+@RestController
 @RequestMapping("/demo")
 public class DemoController {
 
@@ -21,12 +20,13 @@ public class DemoController {
 
 	@Autowired
     private DemoFeignClient demoFeignClient;
-	
-    @RequestMapping(value = "/getData", method = RequestMethod.GET)
-    @ResponseBody
+
+    @GetMapping("getData")
     public String getData(String id) {
         logger.info("/demo/getData id:{}",id);
         String result = demoFeignClient.getData(id);
-        return result;
+        logger.info("调用feign服务方的结果:{}",result);
+
+        return "调用feign服务方的数据是："+result;
     }
 }

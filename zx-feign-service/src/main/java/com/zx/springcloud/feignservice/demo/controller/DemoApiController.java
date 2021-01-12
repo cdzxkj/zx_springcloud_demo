@@ -20,10 +20,13 @@ public class DemoApiController {
     @Value("${server.port}")
     private String port;
 
+    @Value("${spring.application.name}")
+    private String applicationName;
+
     @GetMapping("getData")
     public String getData(String id) {
         logger.info("/api/demo/getData id:{}",id);
 
-        return "api_demo_port:"+port+">>>>id="+id;
+        return applicationName+":"+port+",接收到参数id:"+id;
     }
 }
