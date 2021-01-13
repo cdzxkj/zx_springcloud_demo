@@ -15,8 +15,8 @@ SpringCloud官方:https://spring.io/projects/spring-cloud
 3. [zx-eureka 为注册中心](https://blog.csdn.net/javanian/article/details/87535025)
 4. [zx-feign-service Feign的使用(服务提供方)](https://blog.csdn.net/javanian/article/details/112549191)
 5. [zx-feign-client Feign的使用(服务消费方)](https://blog.csdn.net/javanian/article/details/112549191)
-6. zx-ribbon-service Ribbon的使用(服务提供方)
-7. zx-ribbon-client Ribbon的使用(服务消费方)
+6. [zx-ribbon-service Ribbon的使用(服务提供方)](https://blog.csdn.net/javanian/article/details/112596861)
+7. [zx-ribbon-client Ribbon的使用(服务消费方)](https://blog.csdn.net/javanian/article/details/112596861)
 
 
 #### 个人站点

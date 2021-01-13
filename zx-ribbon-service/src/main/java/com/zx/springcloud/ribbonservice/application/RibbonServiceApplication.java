@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * 服务提供
+ * 启动类
  * @author Nian.Li
  * @version 1.0
  * @date 2018-05-29

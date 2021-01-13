@@ -1,7 +1,3 @@
 spring:
   application:
     name: zx-ribbon-service
-  cloud:
-    config:
-      name: bootstrap-zx-ribbon-service
-      uri:  http://127.0.0.1:8001

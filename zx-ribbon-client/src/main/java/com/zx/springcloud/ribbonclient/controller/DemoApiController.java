@@ -6,6 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * demo示例
  * @author Nian.Li
@@ -13,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  * @date 2018-05-29
  */
 @RestController
-@RequestMapping("/api/demo")
+@RequestMapping("/demo")
 public class DemoApiController {
 
     private static final Logger logger = LoggerFactory.getLogger(DemoApiController.class);
@@ -23,8 +26,22 @@ public class DemoApiController {
 
     @GetMapping("getData")
     public String getData(@RequestParam("id") String id) {
-        logger.info("/api/demo/getData id:{}",id);
+        logger.info("into /demo/getData id:{}",id);
 
-        return demoService.getData(id);
+        String result = demoService.getData(id);
+        logger.info("/demo/getData 结果 result:{}",result);
+        return result;
+    }
+
+    @GetMapping("getMapData")
+    public String getMapData() {
+        Map<String, Object> map= new HashMap<>();
+        map.put("id", 1L);
+        map.put("name", "测试一把");
+
+        String result = demoService.getMapData(map);
+        logger.info("/demo/getMapData 结果 result:{}",result);
+
+        return result;
     }
 }
