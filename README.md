@@ -17,6 +17,7 @@ SpringCloud官方:https://spring.io/projects/spring-cloud
 5. [zx-feign-client Feign的使用(服务消费方)](https://blog.csdn.net/javanian/article/details/112549191)
 6. [zx-ribbon-service Ribbon的使用(服务提供方)](https://blog.csdn.net/javanian/article/details/112596861)
 7. [zx-ribbon-client Ribbon的使用(服务消费方)](https://blog.csdn.net/javanian/article/details/112596861)
+8. [zx-zuul SpringCloud网关组件Zuul的简单使用](https://blog.csdn.net/javanian/article/details/112645145)
 
 
 #### 个人站点

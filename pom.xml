@@ -23,6 +23,7 @@
 		<module>zx-feign-client</module>
 		<module>zx-ribbon-service</module>
         <module>zx-ribbon-client</module>
+        <module>zx-zuul</module>
     </modules>
 
     <properties>

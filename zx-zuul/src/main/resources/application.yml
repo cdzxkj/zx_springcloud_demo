@@ -1,0 +1,26 @@
+server:
+  port: 8010
+
+logging:
+  config: classpath:logback.xml
+
+#注册到注册中心的相关配置
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://zxdemo:zxdemopwd@127.0.0.1:8002/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
+#网关相关配置
+zuul:
+  routes:
+    # 定义路由id，随意写，但是多ID不要重复
+    zx-ribbon-service:
+      # 匹配的路由规则
+      path: /api-ribbon/**
+      # 路由的目标服务名
+      serviceId: zx-ribbon-service
