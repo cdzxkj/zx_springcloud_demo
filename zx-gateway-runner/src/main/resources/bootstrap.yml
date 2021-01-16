@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zx-gateway-runner
+    version: 1.0.0
+    description: gateway网关服务
+
+

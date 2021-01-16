@@ -18,6 +18,7 @@ SpringCloud官方:https://spring.io/projects/spring-cloud
 6. [zx-ribbon-service Ribbon的使用(服务提供方)](https://blog.csdn.net/javanian/article/details/112596861)
 7. [zx-ribbon-client Ribbon的使用(服务消费方)](https://blog.csdn.net/javanian/article/details/112596861)
 8. [zx-zuul SpringCloud网关组件Zuul的简单使用](https://blog.csdn.net/javanian/article/details/112645145)
+9. [zx-gateway-runner SpringCloud网关组件Gateway的简单使用](https://blog.csdn.net/javanian/article/details/112692131)
 
 
 #### 个人站点

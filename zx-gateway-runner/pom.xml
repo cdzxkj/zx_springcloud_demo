@@ -8,19 +8,22 @@
         <artifactId>zx_springcloud_demo</artifactId>
         <groupId>com.zx.springcloud</groupId>
         <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <name>zx-feign-service</name>
-    <artifactId>zx-feign-service</artifactId>
-    <groupId>com.zx.springcloud</groupId>
+    <name>zx-gateway-runner</name>
+    <artifactId>zx-gateway-runner</artifactId>
+    <groupId>com.zx.springboot</groupId>
     <packaging>jar</packaging>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -30,13 +33,13 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>zx-feign-service</finalName>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

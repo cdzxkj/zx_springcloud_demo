@@ -1,0 +1,36 @@
+server:
+  port: 8013
+
+logging:
+  config: classpath:logback.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zxdemo:zxdemopwd@127.0.0.1:8002/eureka/
+  instance:
+    prefer-ip-address: true
+  server:
+    eviction-interval-timer-in-ms: 1000
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lowerCaseServiceId: true
+      routes:
+        - id: zx_path_route
+          uri: lb://zx-feign-service
+          predicates:
+            - Path=/api/v1/test/**
+          filters:
+            - StripPrefix=3
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+
+

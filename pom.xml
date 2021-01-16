@@ -24,6 +24,7 @@
 		<module>zx-ribbon-service</module>
         <module>zx-ribbon-client</module>
         <module>zx-zuul</module>
+        <module>zx-gateway-runner</module>
     </modules>
 
     <properties>
@@ -38,10 +39,6 @@
     </properties>
 
 	<dependencies>
-       <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
