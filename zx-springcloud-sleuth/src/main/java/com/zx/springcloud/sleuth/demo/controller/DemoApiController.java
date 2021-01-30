@@ -1,6 +1,6 @@
-package com.zx.springcloud.feignclient.demo.controller;
+package com.zx.springcloud.sleuth.demo.controller;
 
-import com.zx.springcloud.feignclient.demo.feign.DemoFeignClient;
+import com.zx.springcloud.sleuth.demo.feign.DemoFeignClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.*;
  * @date 2018-05-29
  */
 @RestController
-@RequestMapping("/demo")
-public class DemoController {
+@RequestMapping("/api/demo")
+public class DemoApiController {
 
-    private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
+    private static final Logger logger = LoggerFactory.getLogger(DemoApiController.class);
 
     @Value("${server.port}")
     private String port;
@@ -28,24 +28,9 @@ public class DemoController {
     @Autowired
     private DemoFeignClient demoFeignClient;
 
-    @GetMapping("getData")
-    public String getData(String id) {
-        logger.info("/demo/getData id:{}",id);
-        String result = demoFeignClient.getData(id);
-        logger.info("调用feign服务方的结果:{}",result);
-
-        return "调用feign服务方的数据是："+result;
-    }
-
-
-    /**
-     * 用于测试zipkin的
-     * @param id
-     * @return
-     */
-    @GetMapping("getZipkinData")
-    public String getZipkinData(String id) {
-        logger.info("/demo/getZipkinData id:{}",id);
+    @GetMapping("/getData/{id}")
+    public String getData(@PathVariable("id") String id) {
+        logger.info("/api/demo/getData id:{}",id);
 
         String result = demoFeignClient.getZipkinData(id);
         logger.info("/demo/getZipkinData 调用feign服务方的结果:{}",result);

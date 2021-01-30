@@ -29,4 +29,16 @@ public class DemoApiController {
 
         return applicationName+":"+port+",接收到参数id:"+id;
     }
+
+    /**
+     * 用于测试zipkin的
+     * @param id
+     * @return
+     */
+    @GetMapping("getZipkinData")
+    public String getZipkinData(String id) {
+        logger.info("/api/demo/getZipkinData id:{}",id);
+
+        return "调用服务:"+applicationName+",端口:"+port+",参数id:"+id;
+    }
 }

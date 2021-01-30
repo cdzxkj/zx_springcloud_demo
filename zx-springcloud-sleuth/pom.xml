@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
+		 
+	<modelVersion>4.0.0</modelVersion>
+		 
     <parent>
         <artifactId>zx_springcloud_demo</artifactId>
         <groupId>com.zx.springcloud</groupId>
         <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
-
-    <name>zx-feign-client</name>
-    <artifactId>zx-feign-client</artifactId>
-    <groupId>com.zx.springcloud</groupId>
+    
+    <name>zx-springcloud-sleuth</name>
+    <artifactId>zx-springcloud-sleuth</artifactId>
+    <groupId>com.zx.springboot</groupId>
     <packaging>jar</packaging>
 
     <properties>
@@ -21,6 +21,10 @@
     </properties>
 
     <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -37,20 +41,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
         <!-- 服务链路追踪(Spring Cloud Sleuth) -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>
     </dependencies>
 
     <build>
-        <finalName>zx-feign-client</finalName>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -10,4 +10,8 @@ public interface DemoFeignClient {
 	
     @GetMapping("/api/demo/getData")
     String getData(@RequestParam("id") String id);
+
+
+    @GetMapping("/api/demo/getZipkinData")
+    String getZipkinData(@RequestParam("id") String id);
 }

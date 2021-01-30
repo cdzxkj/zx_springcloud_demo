@@ -1,5 +1,5 @@
 server:
-  port: 8004
+  port: 9008
 
 logging:
   config: classpath:logback.xml
@@ -13,6 +13,10 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
+
+feign:
+  hystrix:
+    enabled: true
 
 spring:
   #zipkin服务端地址(sleuth-cli收集信息后通过http传输到zinkin-server)
@@ -28,4 +32,3 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-

@@ -25,6 +25,7 @@
         <module>zx-ribbon-client</module>
         <module>zx-zuul</module>
         <module>zx-gateway-runner</module>
+        <module>zx-springcloud-sleuth</module>
     </modules>
 
     <properties>
